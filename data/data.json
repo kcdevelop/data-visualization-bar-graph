@@ -1,0 +1,47 @@
+{
+    "dataSet": [
+        {
+            "title": "Big Cat Global Populations"
+        },
+        {
+            "label": "Lion",
+            "total": "20,000",
+            "number": 20,
+            "unit": "%",
+            "color": "#ae9169",
+            "background": "lion-fur.png"
+        },
+        {
+            "label": "Tigers",
+            "total": "3,900",
+            "number": 11,
+            "unit": "px",
+            "color": "#e7a72e",
+            "background": "tiger-fur.png"
+        },
+        {
+            "label": "Pumas",
+            "total": "48,000",
+            "number": 48,
+            "unit": "%",
+            "color": "#d4c565",
+            "background": "mlion-fur.png"
+        },
+        {
+            "label": "Leopards",
+            "total": "100",
+            "number": 5,
+            "unit": "px",
+            "color": "#ce8d44",
+            "background": "leopard-fur.png"
+        },
+        {
+            "label": "Jaguar",
+            "total": "64,000",
+            "number": 64,
+            "unit": "%",
+            "color": "#ddbc78",
+            "background": "jaguar-fur.png"
+        }
+    ]
+}

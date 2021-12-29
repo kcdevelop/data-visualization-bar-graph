@@ -1,0 +1,186 @@
+.graph-title,
+.graph-frame,
+.data-bar > i.total-label,
+.data-bar > div.name-label,
+.graph-frame .bar-graph article {
+    width: 100%;
+}
+.bar-graph,
+.data-bar,
+.graph-frame,
+.graph-frame .bar-graph aside div {
+    position: relative;
+}
+.graph-title,
+.data-bar > i.total-label,
+.data-bar > div.name-label,
+.graph-frame > .border,
+.graph-frame .bar-graph aside div i {
+    position: absolute;
+}
+.graph-frame {
+    animation: openGraph 1000ms ease-in forwards;
+    border-radius: 8px;
+    max-width: 480px;
+    margin: 0px auto;
+    height: 440px;
+}
+@keyframes openGraph {
+    from {
+       max-width: 0px;
+       height: 0px;
+       opacity: 0;
+    }
+    to {
+        max-width: 480px;
+        opacity: 1;
+    }
+}
+.graph-frame > .border {
+    animation: graphBorderZoom 1000ms 1500ms forwards;
+    width: 8vmax;
+    height: 8vmax;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 48px;
+    max-height: 48px;
+    z-index: 2000;
+    opacity: 0;
+}
+@keyframes graphBorderZoom {
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+.graph-frame > .upper-left-border, 
+.graph-frame > .upper-right-border {
+    border-top: 2px solid #000;
+    top: 0px;
+}
+.graph-frame > .bottom-left-border, 
+.graph-frame > .bottom-right-border {
+    border-bottom: 2px solid #000;
+    bottom: 0px;
+}
+.graph-frame > .upper-left-border,
+.graph-frame > .bottom-left-border {
+    border-left: 2px solid #000;
+    left: 0px;
+}
+.graph-frame > .upper-right-border,
+.graph-frame > .bottom-right-border {
+    border-right: 2px solid #000;
+    right: 0px;
+}
+.graph-frame > .upper-left-border,
+.graph-frame > .bottom-right-border {
+    border-radius: 8px 0px;
+}
+.graph-frame > .upper-right-border,
+.graph-frame > .bottom-left-border {
+    border-radius: 0px 8px;
+}
+.graph-frame > .upper-left-border {
+    transform: translate(41px, 40px);
+}
+.graph-frame > .upper-right-border {
+    transform: translate(-41px, 40px);
+}
+.graph-frame > .bottom-left-border {
+    transform: translate(41px, -49px);
+}
+.graph-frame > .bottom-right-border {
+    transform: translate(-41px, -49px);
+}
+.graph-bars,
+.graph-frame .bar-graph,
+.graph-frame .bar-graph aside {
+    display: flex;
+}
+.graph-frame .bar-graph {
+    background-color: rgba(227,191,0,1);
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 18px 11px;
+    width: 82%;
+    height: 79%;
+    top: 49%;
+    left: 50%;
+}
+.graph-bars,
+.graph-frame .bar-graph aside,
+.graph-frame .bar-graph article {
+    height: 100%;
+}
+.graph-frame .bar-graph article {
+    padding-left: 12px;
+}
+.graph-frame .bar-graph aside {
+    justify-content: space-between;
+    border-left: 2px solid #000;
+    flex-direction: column;
+    width: 35px;       
+}
+.graph-frame .bar-graph aside div {
+    border-top: 2px solid #000;
+    width: 17px;
+}
+.graph-frame .bar-graph aside div i {
+    text-indent: 18px;
+    bottom: -8px;
+}
+.data-bar,
+.graph-title {
+    font-family: arial;
+}
+.graph-title {
+    text-align: center;
+    font-size: 18px;
+}
+.graph-bars {
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+.data-bar,
+.data-bar > div.name-label {
+    text-align: center;
+}
+.data-bar > i.total-label,
+.data-bar > div.name-label {
+    color: #000;
+}
+.data-bar {
+    background: no-repeat center center white;
+    background-size: cover;
+    margin: 0px 0px 0px 11px;
+    font-size: 11px;
+    width: 30%;
+}
+.data-bar > i.total-label,
+.data-bar > div.name-label {
+    font-weight: bold;
+}
+.data-bar > div.name-label {
+    transform: rotate(45deg);
+    bottom: -48px;
+}
+.data-bar > i.total-label {
+    font-style: normal;
+    left: 0px;
+    top: -20px;
+}
+.data-bar > i.highlight {
+    color: red;
+}
+.graph-frame .bar-graph aside,
+.graph-frame .bar-graph article {
+    border-bottom: 2px solid #000;
+}
+.graph-frame .bar-graph aside div:last-child {
+    border: none;
+}
+.graph-frame .bar-graph aside div:last-child i {
+    text-indent: -1000px;
+}
